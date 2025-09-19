@@ -1,0 +1,10 @@
+plugins {
+    id 'com.android.application' version '8.7.0' apply false
+}
+
+tasks.withType(Wrapper).configureEach {
+    gradleVersion = '8.9'
+    distributionType = Wrapper.DistributionType.BIN
+    distributionUrl = 'https://services.gradle.org/distributions/gradle-8.9-bin.zip'
+    validateDistributionUrl = false
+}
